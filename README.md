@@ -22,24 +22,52 @@ GitHub, açık kaynak projelerden özel projelere kadar geniş bir yelpazede kul
 4. **Bağlam Sağlayın:** Değişikliklerin hangi sorunu çözdüğünü veya hangi özelliği eklediğini belirtin.
 5. **Numaralandırma ve Referanslar:** İlgili ise, sorun numaralarını veya referansları ekleyin.
 
+### Kullanıcı Bilgilerini Ayarlama
+
+```console
+git config --global user.name <username>
+git config --global user.email <useremail>
+```
+
+Git yapılandırma ayarlarını global düzeyde ayarlamak için kullanılır. Global düzeyde yapılan ayarlar, bilgisayarınızdaki tüm Git depoları için geçerli olur.
+
+```console
+git config --global user.name "yucel-yilmaz"
+```
+
+Bu komut, Git kullanıcı adınızı ayarlar. Bu kullanıcı adı, Git ile yaptığınız tüm işlemlerde kullanılacaktır.
+
+```console
+git config --global user.email "yucelyilmaz.en@gmail.com":
+```
+
+Bu komut, Git kullanıcı e-posta adresinizi ayarlar. Bu e-posta adresi, Git ile yaptığınız tüm işlemlerde kullanılacaktır.
+Bu ayarlar, Git commit'lerinde kimlik bilgilerinizi belirlemek için kullanılır. Böylece, commit'lerinizin kim tarafından yapıldığını izlemek mümkün olur.
+
 ### Örnek Commit Mesajları
 
 ```
 feat: kullanıcı giriş sistemi eklendi
+```
 
 Kullanıcıların sisteme giriş yapabilmesi için gerekli olan kimlik doğrulama mekanizması eklendi. Bu değişiklik, kullanıcıların kişisel hesaplarına erişimini sağlar.
-```
 
 ```
 fix: ana sayfadaki yazım hatası düzeltildi
+```
 
 Ana sayfadaki "Hoşgeldiniz" başlığındaki yazım hatası düzeltildi. Bu değişiklik, kullanıcı deneyimini iyileştirir.
-```
 
 ```
-fix: ana sayfadaki yazım hatası düzeltildi
-
-Ana sayfadaki "Hoşgeldiniz" başlığındaki yazım hatası düzeltildi. Bu değişiklik, kullanıcı deneyimini iyileştirir.
+docs: README dosyasında değişiklik yapıldı.
 ```
+
+README gibi dokümanlarda değişiklik yapıldığını bildirmek için uygundur.
+
+```
+perf: Kod performası arttırıldı.
+```
+
+README gibi dokümanlarda değişiklik yapıldığını bildirmek için uygundur.
 
 İyi yazılmış commit mesajları, proje geçmişini anlamayı kolaylaştırır ve ekip içi iletişimi geliştirir.
