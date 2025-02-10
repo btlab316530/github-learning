@@ -451,7 +451,7 @@ Bu projeye destek olmak için aşağıdaki bağlantıları kullanabilirsiniz:
 
 Tüm destekleyenlere teşekkürler!
 
-- [Katkıda Bulunanlar](https://github.com/btr316530/github-learning/graphs/contributors)
+- [Katkıda Bulunanlar](https://github.com/btlab316530/github-learning/graphs/contributors)
 
 ## Lisans
 
