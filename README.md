@@ -46,25 +46,25 @@ Bu ayarlar, Git commit'lerinde kimlik bilgilerinizi belirlemek için kullanılı
 
 ### Örnek Commit Mesajları
 
-```
+```console
 feat: kullanıcı giriş sistemi eklendi
 ```
 
 Kullanıcıların sisteme giriş yapabilmesi için gerekli olan kimlik doğrulama mekanizması eklendi. Bu değişiklik, kullanıcıların kişisel hesaplarına erişimini sağlar.
 
-```
+```console
 fix: ana sayfadaki yazım hatası düzeltildi
 ```
 
 Ana sayfadaki "Hoşgeldiniz" başlığındaki yazım hatası düzeltildi. Bu değişiklik, kullanıcı deneyimini iyileştirir.
 
-```
+```console
 docs: README dosyasında değişiklik yapıldı.
 ```
 
 README gibi dokümanlarda değişiklik yapıldığını bildirmek için uygundur.
 
-```
+```console
 perf: Kod performası arttırıldı.
 ```
 
