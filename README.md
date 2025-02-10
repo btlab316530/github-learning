@@ -3,8 +3,7 @@
 </p>
 <h3 align="center">Github Öğrenme Yolculuğu İçin Başvuru Dokümanı</h3>
 <p align="center">
-    <span><a href="https://github.com/btr316530/github-learning/issues/new?assignees=&labels=bug&template=bug_report.md&title">Hata Bildir</a></span>
-    <span><a href="[def4]">Özellik İste</a></span>
+    <span><a href="https://github.com/btlab316530/github-learning/issues/new?assignees=&labels=bug&template=bug_report.md&title">Hata Bildir</a></span>
 </p>
 
 # GitHub Nedir?
