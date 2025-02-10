@@ -68,6 +68,6 @@ README gibi dokümanlarda değişiklik yapıldığını bildirmek için uygundur
 perf: Kod performası arttırıldı.
 ```
 
-README gibi dokümanlarda değişiklik yapıldığını bildirmek için uygundur.
+Performansı etkileyen değişiklikleri bildirmek için kullanıma uygun.
 
 İyi yazılmış commit mesajları, proje geçmişini anlamayı kolaylaştırır ve ekip içi iletişimi geliştirir.
