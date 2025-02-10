@@ -296,3 +296,107 @@ git log --since="2023-01-01" --until="2023-12-31"
 Bu komut, belirli bir tarih aralığındaki commit'leri filtreler. Tarihler yerine "2 weeks ago" gibi relative zaman ifadeleri de kullanılabilir.
 
 Git log komutları, projenizin geçmişini anlamak ve belirli değişiklikleri takip etmek için güçlü araçlardır.
+
+### Commit İşlemleri
+
+Git commit komutu, yapılan değişiklikleri kaydetmek için kullanılır. Commit işlemi, projenizdeki değişiklikleri bir noktada dondurur ve bu değişikliklerin kaydını tutar.
+
+#### Değişiklikleri Commit Etme
+
+Değişiklikleri commit etmek için önce değişiklikleri sahneleyin:
+
+```console
+git add <file>
+```
+
+Tüm değişiklikleri sahnelemek için:
+
+```console
+git add .
+```
+
+Ardından, değişiklikleri commit edin:
+
+```console
+git commit -m "Commit mesajı"
+```
+
+Bu komut, sahnelenmiş değişiklikleri kaydeder ve belirtilen mesajı commit mesajı olarak kullanır.
+
+#### Commit Mesajı Düzenleme
+
+Eğer commit mesajını düzenlemek isterseniz:
+
+```console
+git commit --amend
+```
+
+Bu komut, son commit mesajını düzenlemenizi sağlar. Ayrıca, son commit'e ek değişiklikler de ekleyebilirsiniz.
+
+#### Değişiklikleri Geri Alma
+
+Eğer commit işlemini geri almak isterseniz:
+
+```console
+git revert <commit-hash>
+```
+
+Bu komut, belirtilen commit'i geri alır ve yeni bir commit oluşturur. Commit hash'i, geri almak istediğiniz commit'in hash değeridir.
+
+#### Commit Geçmişini İnceleme
+
+Commit geçmişini incelemek için:
+
+```console
+git log
+```
+
+Bu komut, projenizdeki tüm commit'lerin bir listesini gösterir. Daha okunabilir bir format için:
+
+```console
+git log --oneline
+```
+
+Commit işlemleri, projenizdeki değişiklikleri kaydetmek ve takip etmek için temel bir Git işlevselliğidir.
+
+### Commit Silme
+
+Git'te commit silme işlemi dikkatli yapılması gereken bir işlemdir. Commit'leri silmek, proje geçmişini değiştirebilir ve diğer işbirlikçilerle uyumsuzluklara yol açabilir. Commit'leri silmek için iki yaygın yöntem vardır: `git reset` ve `git revert`.
+
+#### Son Commit'i Silme
+
+Son commit'i silmek için:
+
+```console
+git reset --hard HEAD~1
+```
+
+Bu komut, son commit'i ve yapılan değişiklikleri tamamen siler. Eğer değişiklikleri korumak isterseniz, `--soft` seçeneğini kullanabilirsiniz:
+
+```console
+git reset --soft HEAD~1
+```
+
+Bu komut, son commit'i siler ancak değişiklikleri korur ve sahnelenmiş olarak bırakır.
+
+#### Belirli Bir Commit'i Silme
+
+Belirli bir commit'i silmek için:
+
+```console
+git rebase -i <commit-hash>^
+```
+
+Bu komut, belirtilen commit'in öncesindeki commit'i interaktif rebase modunda açar. Açılan editörde, silmek istediğiniz commit'in satırını `pick` yerine `drop` olarak değiştirin ve dosyayı kaydedin.
+
+#### Commit'i Geri Alma
+
+Commit'i tamamen silmek yerine geri almak için:
+
+```console
+git revert <commit-hash>
+```
+
+Bu komut, belirtilen commit'in etkilerini geri alır ve yeni bir commit oluşturur. Bu yöntem, proje geçmişini koruyarak değişiklikleri geri almak için daha güvenlidir.
+
+Commit silme işlemleri, proje geçmişini düzenlemek ve istenmeyen değişiklikleri geri almak için kullanışlıdır. Ancak, bu işlemleri yaparken dikkatli olunmalı ve mümkünse diğer işbirlikçilerle iletişim kurulmalıdır.
