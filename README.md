@@ -3,8 +3,8 @@
 </p>
 <h3 align="center">Github Öğrenme Yolculuğu İçin Başvuru Dokümanı</h3>
 <p align="center">
-    <span><a href="https://github.com/bitlimakina/github-learning/issues/new?assignees=&labels=bug&template=bug_report.md&title">Hata Bildir</a></span>
-    <span><a href="https://github.com/bitlimakina/github-learning/issues/new?assignees=&labels=feature&template=feature_request.md&title">Özellik İste</a></span>
+    <span><a href="https://github.com/btr316530/github-learning/issues/new?assignees=&labels=bug&template=bug_report.md&title">Hata Bildir</a></span>
+    <span><a href="https://github.com/btr316530/github-learning/issues/new?assignees=&labels=feature&template=feature_request.md&title">Özellik İste</a></span>
 </p>
 
 # GitHub Nedir?
@@ -445,19 +445,19 @@ Commit silme işlemleri, proje geçmişini düzenlemek ve istenmeyen değişikli
 
 Bu projeye destek olmak için aşağıdaki bağlantıları kullanabilirsiniz:
 
-- [Bağış Yap](https://github.com/bitlimakina/github-learning/issues/new?assignees=&labels=feature&template=feature_request.md&title)
-- [Katkıda Bulun](https://github.com/bitlimakina/github-learning/issues/new?assignees=&labels=bug&template=bug_report.md&title)
+- [Bağış Yap](https://github.com/btr316530/github-learning/issues/new?assignees=&labels=feature&template=feature_request.md&title)
+- [Katkıda Bulun](https://github.com/btr316530/github-learning/issues/new?assignees=&labels=bug&template=bug_report.md&title)
 
 ## Destekleyenler
 
 Tüm destekleyenlere teşekkürler!
 
-- [Katkıda Bulunanlar](https://github.com/bitlimakina/github-learning/graphs/contributors)
+- [Katkıda Bulunanlar](https://github.com/btr316530/github-learning/graphs/contributors)
 
 ## Lisans
 
 Bu proje MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için [LICENSE](LICENSE) dosyasına bakabilirsiniz.
 
-[def]: ttps://github.com/bitlimakina/github-learning/issues/new?assignees=&labels=feature&template=feature_request.md&title
-[def2]: ttps://github.com/bitlimakina/github-learning/issue
+[def]: ttps://github.com/btr316530/github-learning/issues/new?assignees=&labels=feature&template=feature_request.md&title
+[def2]: ttps://github.com/btr316530/github-learning/issue
 [def3]: def
