@@ -98,6 +98,66 @@ Bu komut, depoyu belirtilen dizin adıyla indirir.
 
 Git clone komutu, projeye hızlı bir başlangıç yapmak ve mevcut bir projeyi yerel ortamınıza getirmek için kullanışlıdır.
 
+### Git Branch Kullanımı
+
+Git branch komutu, dalları yönetmek için kullanılır. Dallar, projede paralel çalışmalar yapmayı ve farklı özellikler üzerinde çalışmayı kolaylaştırır.
+
+#### Yeni Bir Dal Oluşturma
+
+Yeni bir dal oluşturmak için:
+
+```console
+git branch <branch-name>
+```
+
+Bu komut, mevcut dalın bir kopyasını oluşturur ve yeni bir dal oluşturur.
+
+#### Dalları Listeleme
+
+Mevcut dalları listelemek için:
+
+```console
+git branch
+```
+
+Bu komut, yerel depodaki tüm dalları listeler ve şu anda hangi dalda olduğunuzu gösterir.
+
+#### Bir Dala Geçiş Yapma
+
+Başka bir dala geçiş yapmak için:
+
+```console
+git checkout <branch-name>
+```
+
+Bu komut, belirtilen dala geçiş yapar ve çalışma dizininizi o dalın son commit'ine göre günceller.
+
+#### Yeni Bir Dal Oluşturma ve Geçiş Yapma
+
+Yeni bir dal oluşturup aynı anda o dala geçiş yapmak için:
+
+```console
+git switch -c <branch-name>
+```
+
+Bu komut, yeni bir dal oluşturur ve otomatik olarak o dala geçiş yapar.
+
+#### Dal Silme
+
+Bir dalı silmek için:
+
+```console
+git branch -d <branch-name>
+```
+
+Bu komut, belirtilen dalı siler. Eğer dalda henüz birleştirilmemiş değişiklikler varsa, -D seçeneğini kullanarak zorla silebilirsiniz:
+
+```console
+git branch -D <branch-name>
+```
+
+Git branch komutu, projede dallar oluşturmak, yönetmek ve dallar arasında geçiş yapmak için kullanışlıdır.
+
 ### Git Remote Kullanımı
 
 Git remote komutları, yerel Git deposunu uzak bir depoya bağlamak ve yönetmek için kullanılır. Uzak depolar, projelerinizi GitHub gibi platformlarda barındırmanızı sağlar.
