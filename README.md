@@ -1,6 +1,52 @@
+<p align="center">
+<img src="source/header.png" alt="Header Image">
+</p>
+<h3 align="center">Github Öğrenme Yolculuğu İçin Başvuru Dokümanı</h3>
+<p align="center">
+    <span><a href="https://github.com/bitlimakina/github-learning/issues/new?assignees=&labels=bug&template=bug_report.md&title">Hata Bildir</a></span>
+    <span><a href="https://github.com/bitlimakina/github-learning/issues/new?assignees=&labels=feature&template=feature_request.md&title">Özellik İste</a></span>
+</p>
+
 # GitHub Nedir?
 
 GitHub, yazılım geliştirme projeleri için web tabanlı bir versiyon kontrol ve işbirliği platformudur. Git versiyon kontrol sistemini kullanarak projelerinizi yönetmenizi sağlar. GitHub, kod depolarınızı barındırmanıza, değişiklikleri takip etmenize ve diğer geliştiricilerle işbirliği yapmanıza olanak tanır.
+
+## İçindekiler
+
+- [GitHub Nedir?](#github-nedir)
+- [Temel Özellikler](#temel-özellikler)
+- [Commit Mesajları Nasıl Olmalı?](#commit-mesajları-nasıl-olmalı)
+  - [Örnek Commit Mesajları](#örnek-commit-mesajları)
+- [Kullanıcı Bilgilerini Ayarlama](#kullanıcı-bilgilerini-ayarlama)
+- [Git Clone Kullanımı](#git-clone-kullanımı)
+  - [Depoyu Klonlama](#depoyu-klonlama)
+  - [Belirli Bir Dizin Adıyla Klonlama](#belirli-bir-dizin-adıyla-klonlama)
+- [Git Branch Kullanımı](#git-branch-kullanımı)
+  - [Yeni Bir Dal Oluşturma](#yeni-bir-dal-oluşturma)
+  - [Dalları Listeleme](#dalları-listeleme)
+  - [Bir Dala Geçiş Yapma](#bir-dala-geçiş-yapma)
+  - [Yeni Bir Dal Oluşturma ve Geçiş Yapma](#yeni-bir-dal-oluşturma-ve-geçiş-yapma)
+  - [Dal Silme](#dal-silme)
+- [Git Remote Kullanımı](#git-remote-kullanımı)
+  - [Uzak Depo Ekleme](#uzak-depo-ekleme)
+  - [Uzak Depoları Listeleme](#uzak-depoları-listeleme)
+  - [Uzak Depodan Değişiklikleri Çekme](#uzak-depodan-değişiklikleri-çekme)
+  - [Uzak Depodan Değişiklikleri Çekme ve Birleştirme](#uzak-depodan-değişiklikleri-çekme-ve-birleştirme)
+  - [Uzak Depoya Değişiklikleri Gönderme](#uzak-depoya-değişiklikleri-gönderme)
+  - [Uzak Depoyu Kaldırma](#uzak-depoyu-kaldırma)
+- [Git Merge Kullanımı](#git-merge-kullanımı)
+  - [Dalları Birleştirme](#dalları-birleştirme)
+  - [Birleştirme Çatışmalarını Çözme](#birleştirme-çatışmalarını-çözme)
+- [Git Log Kullanımı](#git-log-kullanımı)
+- [Commit İşlemleri](#commit-işlemleri)
+  - [Değişiklikleri Commit Etme](#değişiklikleri-commit-etme)
+  - [Commit Mesajı Düzenleme](#commit-mesajı-düzenleme)
+  - [Değişiklikleri Geri Alma](#değişiklikleri-geri-alma)
+  - [Commit Geçmişini İnceleme](#commit-geçmişini-inceleme)
+- [Commit Silme](#commit-silme)
+  - [Son Commit'i Silme](#son-commiti-silme)
+  - [Belirli Bir Commit'i Silme](#belirli-bir-commiti-silme)
+  - [Commit'i Geri Alma](#commiti-geri-alma)
 
 ## Temel Özellikler
 
@@ -394,3 +440,24 @@ git revert <commit-hash>
 Bu komut, belirtilen commit'in etkilerini geri alır ve yeni bir commit oluşturur. Bu yöntem, proje geçmişini koruyarak değişiklikleri geri almak için daha güvenlidir.
 
 Commit silme işlemleri, proje geçmişini düzenlemek ve istenmeyen değişiklikleri geri almak için kullanışlıdır. Ancak, bu işlemleri yaparken dikkatli olunmalı ve mümkünse diğer işbirlikçilerle iletişim kurulmalıdır.
+
+## Destek Olun
+
+Bu projeye destek olmak için aşağıdaki bağlantıları kullanabilirsiniz:
+
+- [Bağış Yap](https://github.com/bitlimakina/github-learning/issues/new?assignees=&labels=feature&template=feature_request.md&title)
+- [Katkıda Bulun](https://github.com/bitlimakina/github-learning/issues/new?assignees=&labels=bug&template=bug_report.md&title)
+
+## Destekleyenler
+
+Tüm destekleyenlere teşekkürler!
+
+- [Katkıda Bulunanlar](https://github.com/bitlimakina/github-learning/graphs/contributors)
+
+## Lisans
+
+Bu proje MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için [LICENSE](LICENSE) dosyasına bakabilirsiniz.
+
+[def]: ttps://github.com/bitlimakina/github-learning/issues/new?assignees=&labels=feature&template=feature_request.md&title
+[def2]: ttps://github.com/bitlimakina/github-learning/issue
+[def3]: def
