@@ -132,6 +132,51 @@ git fetch origin
 
 Bu komut, uzak depodaki değişiklikleri yerel deponuza getirir ancak çalışma dizininize uygulamaz.
 
+#### Uzak Depodan Değişiklikleri Çekme ve Birleştirme
+
+Uzak depodaki değişiklikleri yerel deponuza çekmek ve otomatik olarak birleştirmek için:
+
+```console
+git pull origin main
+```
+
+Bu komut, "origin" uzak deposundaki "main" dalındaki değişiklikleri yerel "main" dalınıza çeker ve birleştirir. Eğer birleştirme sırasında çatışmalar oluşursa, bu çatışmaları çözmeniz gerekecektir.
+
+Git pull komutu, uzak depodaki en son değişiklikleri yerel deponuza entegre etmek için kullanışlıdır.
+
+### Git Merge Kullanımı
+
+Git merge komutu, farklı dallardaki değişiklikleri birleştirmek için kullanılır. Bu komut, bir dalın içeriğini başka bir dala entegre eder.
+
+#### Dalları Birleştirme
+
+Bir dalı başka bir dala birleştirmek için önce hedef dalı checkout yapın:
+
+```console
+git checkout main
+```
+
+Ardından, birleştirmek istediğiniz dalı belirtin:
+
+```console
+git merge feature-branch
+```
+
+Bu komut, "feature-branch" dalındaki değişiklikleri "main" dalına birleştirir.
+
+#### Birleştirme Çatışmalarını Çözme
+
+Birleştirme sırasında çatışmalar oluşabilir. Çatışmaları çözmek için ilgili dosyaları düzenleyin ve değişiklikleri commit yapın:
+
+```console
+git add <conflicted-files>
+git commit
+```
+
+Birleştirme işlemi tamamlandığında, değişiklikler hedef dalda birleştirilmiş olur.
+
+Git merge komutu, farklı dallardaki çalışmaları entegre etmek ve projeyi birleştirmek için kullanışlıdır.
+
 #### Uzak Depoya Değişiklikleri Gönderme
 
 Yerel deponuzdaki değişiklikleri uzak depoya göndermek için:
