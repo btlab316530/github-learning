@@ -22,28 +22,6 @@ GitHub, açık kaynak projelerden özel projelere kadar geniş bir yelpazede kul
 4. **Bağlam Sağlayın:** Değişikliklerin hangi sorunu çözdüğünü veya hangi özelliği eklediğini belirtin.
 5. **Numaralandırma ve Referanslar:** İlgili ise, sorun numaralarını veya referansları ekleyin.
 
-### Kullanıcı Bilgilerini Ayarlama
-
-```console
-git config --global user.name <username>
-git config --global user.email <useremail>
-```
-
-Git yapılandırma ayarlarını global düzeyde ayarlamak için kullanılır. Global düzeyde yapılan ayarlar, bilgisayarınızdaki tüm Git depoları için geçerli olur.
-
-```console
-git config --global user.name "yucel-yilmaz"
-```
-
-Bu komut, Git kullanıcı adınızı ayarlar. Bu kullanıcı adı, Git ile yaptığınız tüm işlemlerde kullanılacaktır.
-
-```console
-git config --global user.email "yucelyilmaz.en@gmail.com":
-```
-
-Bu komut, Git kullanıcı e-posta adresinizi ayarlar. Bu e-posta adresi, Git ile yaptığınız tüm işlemlerde kullanılacaktır.
-Bu ayarlar, Git commit'lerinde kimlik bilgilerinizi belirlemek için kullanılır. Böylece, commit'lerinizin kim tarafından yapıldığını izlemek mümkün olur.
-
 ### Örnek Commit Mesajları
 
 ```console
@@ -72,11 +50,29 @@ Performansı etkileyen değişiklikleri bildirmek için kullanıma uygun.
 
 İyi yazılmış commit mesajları, proje geçmişini anlamayı kolaylaştırır ve ekip içi iletişimi geliştirir.
 
-### Git Clone Kullanımı
+## Kullanıcı Bilgilerini Ayarlama
+
+Git yapılandırma ayarlarını global düzeyde ayarlamak için kullanılır. Global düzeyde yapılan ayarlar, bilgisayarınızdaki tüm Git depoları için geçerli olur.
+
+```console
+git config --global user.name <username>
+git config --global user.email <useremail>
+```
+
+Bu komutlar, Git kullanıcı adınızı ve e-posta adresinizi ayarlar. Bu bilgiler, Git ile yaptığınız tüm işlemlerde kullanılacaktır.
+
+```console
+git config --global user.name "yucel-yilmaz"
+git config --global user.email "yucelyilmaz.en@gmail.com"
+```
+
+Bu ayarlar, Git commit'lerinde kimlik bilgilerinizi belirlemek için kullanılır. Böylece, commit'lerinizin kim tarafından yapıldığını izlemek mümkün olur.
+
+## Git Clone Kullanımı
 
 Git clone komutu, uzak bir depoyu yerel bilgisayarınıza kopyalamak için kullanılır. Bu komut, projeyi baştan sona indirir ve yerel bir Git deposu oluşturur.
 
-#### Depoyu Klonlama
+### Depoyu Klonlama
 
 Bir projeyi klonlamak için aşağıdaki komutu kullanabilirsiniz:
 
@@ -86,7 +82,7 @@ git clone <repository-url>
 
 Bu komut, belirtilen URL'deki depoyu yerel bilgisayarınıza indirir. Depo, URL'den alınan ada sahip bir dizin olarak oluşturulur.
 
-#### Belirli Bir Dizin Adıyla Klonlama
+### Belirli Bir Dizin Adıyla Klonlama
 
 Depoyu belirli bir dizin adıyla klonlamak için:
 
@@ -98,11 +94,11 @@ Bu komut, depoyu belirtilen dizin adıyla indirir.
 
 Git clone komutu, projeye hızlı bir başlangıç yapmak ve mevcut bir projeyi yerel ortamınıza getirmek için kullanışlıdır.
 
-### Git Branch Kullanımı
+## Git Branch Kullanımı
 
 Git branch komutu, dalları yönetmek için kullanılır. Dallar, projede paralel çalışmalar yapmayı ve farklı özellikler üzerinde çalışmayı kolaylaştırır.
 
-#### Yeni Bir Dal Oluşturma
+### Yeni Bir Dal Oluşturma
 
 Yeni bir dal oluşturmak için:
 
@@ -112,7 +108,7 @@ git branch <branch-name>
 
 Bu komut, mevcut dalın bir kopyasını oluşturur ve yeni bir dal oluşturur.
 
-#### Dalları Listeleme
+### Dalları Listeleme
 
 Mevcut dalları listelemek için:
 
@@ -122,7 +118,7 @@ git branch
 
 Bu komut, yerel depodaki tüm dalları listeler ve şu anda hangi dalda olduğunuzu gösterir.
 
-#### Bir Dala Geçiş Yapma
+### Bir Dala Geçiş Yapma
 
 Başka bir dala geçiş yapmak için:
 
@@ -132,7 +128,7 @@ git checkout <branch-name>
 
 Bu komut, belirtilen dala geçiş yapar ve çalışma dizininizi o dalın son commit'ine göre günceller.
 
-#### Yeni Bir Dal Oluşturma ve Geçiş Yapma
+### Yeni Bir Dal Oluşturma ve Geçiş Yapma
 
 Yeni bir dal oluşturup aynı anda o dala geçiş yapmak için:
 
@@ -142,7 +138,7 @@ git switch -c <branch-name>
 
 Bu komut, yeni bir dal oluşturur ve otomatik olarak o dala geçiş yapar.
 
-#### Dal Silme
+### Dal Silme
 
 Bir dalı silmek için:
 
@@ -158,11 +154,11 @@ git branch -D <branch-name>
 
 Git branch komutu, projede dallar oluşturmak, yönetmek ve dallar arasında geçiş yapmak için kullanışlıdır.
 
-### Git Remote Kullanımı
+## Git Remote Kullanımı
 
 Git remote komutları, yerel Git deposunu uzak bir depoya bağlamak ve yönetmek için kullanılır. Uzak depolar, projelerinizi GitHub gibi platformlarda barındırmanızı sağlar.
 
-#### Uzak Depo Ekleme
+### Uzak Depo Ekleme
 
 Bir projeye uzak depo eklemek için aşağıdaki komutu kullanabilirsiniz:
 
@@ -172,7 +168,7 @@ git remote add origin <repository-url>
 
 Bu komut, yerel deponuzu belirtilen URL'deki uzak depoya bağlar. "origin" genellikle varsayılan uzak depo adı olarak kullanılır.
 
-#### Uzak Depoları Listeleme
+### Uzak Depoları Listeleme
 
 Bağlı olduğunuz uzak depoları listelemek için:
 
@@ -182,7 +178,7 @@ git remote -v
 
 Bu komut, uzak depo adlarını ve URL'lerini gösterir.
 
-#### Uzak Depodan Değişiklikleri Çekme
+### Uzak Depodan Değişiklikleri Çekme
 
 Uzak depodan en son değişiklikleri almak için:
 
@@ -192,7 +188,7 @@ git fetch origin
 
 Bu komut, uzak depodaki değişiklikleri yerel deponuza getirir ancak çalışma dizininize uygulamaz.
 
-#### Uzak Depodan Değişiklikleri Çekme ve Birleştirme
+### Uzak Depodan Değişiklikleri Çekme ve Birleştirme
 
 Uzak depodaki değişiklikleri yerel deponuza çekmek ve otomatik olarak birleştirmek için:
 
@@ -202,13 +198,33 @@ git pull origin main
 
 Bu komut, "origin" uzak deposundaki "main" dalındaki değişiklikleri yerel "main" dalınıza çeker ve birleştirir. Eğer birleştirme sırasında çatışmalar oluşursa, bu çatışmaları çözmeniz gerekecektir.
 
-Git pull komutu, uzak depodaki en son değişiklikleri yerel deponuza entegre etmek için kullanışlıdır.
+### Uzak Depoya Değişiklikleri Gönderme
 
-### Git Merge Kullanımı
+Yerel deponuzdaki değişiklikleri uzak depoya göndermek için:
+
+```console
+git push origin main
+```
+
+Bu komut, yerel "main" dalındaki değişiklikleri "origin" uzak deposuna gönderir.
+
+### Uzak Depoyu Kaldırma
+
+Bir uzak depoyu kaldırmak için:
+
+```console
+git remote remove origin
+```
+
+Bu komut, "origin" adlı uzak depoyu yerel deponuzdan kaldırır.
+
+Git remote komutları, projelerinizi uzak depolarla senkronize etmek ve işbirliği yapmak için önemlidir.
+
+## Git Merge Kullanımı
 
 Git merge komutu, farklı dallardaki değişiklikleri birleştirmek için kullanılır. Bu komut, bir dalın içeriğini başka bir dala entegre eder.
 
-#### Dalları Birleştirme
+### Dalları Birleştirme
 
 Bir dalı başka bir dala birleştirmek için önce hedef dalı checkout yapın:
 
@@ -224,7 +240,7 @@ git merge feature-branch
 
 Bu komut, "feature-branch" dalındaki değişiklikleri "main" dalına birleştirir.
 
-#### Birleştirme Çatışmalarını Çözme
+### Birleştirme Çatışmalarını Çözme
 
 Birleştirme sırasında çatışmalar oluşabilir. Çatışmaları çözmek için ilgili dosyaları düzenleyin ve değişiklikleri commit yapın:
 
@@ -237,29 +253,7 @@ Birleştirme işlemi tamamlandığında, değişiklikler hedef dalda birleştiri
 
 Git merge komutu, farklı dallardaki çalışmaları entegre etmek ve projeyi birleştirmek için kullanışlıdır.
 
-#### Uzak Depoya Değişiklikleri Gönderme
-
-Yerel deponuzdaki değişiklikleri uzak depoya göndermek için:
-
-```console
-git push origin main
-```
-
-Bu komut, yerel "main" dalındaki değişiklikleri "origin" uzak deposuna gönderir.
-
-#### Uzak Depoyu Kaldırma
-
-Bir uzak depoyu kaldırmak için:
-
-```console
-git remote remove origin
-```
-
-Bu komut, "origin" adlı uzak depoyu yerel deponuzdan kaldırır.
-
-Git remote komutları, projelerinizi uzak depolarla senkronize etmek ve işbirliği yapmak için önemlidir.
-
-### Git Log Kullanımı
+## Git Log Kullanımı
 
 Git projenizdeki commit geçmişini görüntülemek için aşağıdaki komutu kullanabilirsiniz:
 
@@ -297,11 +291,11 @@ Bu komut, belirli bir tarih aralığındaki commit'leri filtreler. Tarihler yeri
 
 Git log komutları, projenizin geçmişini anlamak ve belirli değişiklikleri takip etmek için güçlü araçlardır.
 
-### Commit İşlemleri
+## Commit İşlemleri
 
 Git commit komutu, yapılan değişiklikleri kaydetmek için kullanılır. Commit işlemi, projenizdeki değişiklikleri bir noktada dondurur ve bu değişikliklerin kaydını tutar.
 
-#### Değişiklikleri Commit Etme
+### Değişiklikleri Commit Etme
 
 Değişiklikleri commit etmek için önce değişiklikleri sahneleyin:
 
@@ -323,7 +317,7 @@ git commit -m "Commit mesajı"
 
 Bu komut, sahnelenmiş değişiklikleri kaydeder ve belirtilen mesajı commit mesajı olarak kullanır.
 
-#### Commit Mesajı Düzenleme
+### Commit Mesajı Düzenleme
 
 Eğer commit mesajını düzenlemek isterseniz:
 
@@ -333,7 +327,7 @@ git commit --amend
 
 Bu komut, son commit mesajını düzenlemenizi sağlar. Ayrıca, son commit'e ek değişiklikler de ekleyebilirsiniz.
 
-#### Değişiklikleri Geri Alma
+### Değişiklikleri Geri Alma
 
 Eğer commit işlemini geri almak isterseniz:
 
@@ -343,7 +337,7 @@ git revert <commit-hash>
 
 Bu komut, belirtilen commit'i geri alır ve yeni bir commit oluşturur. Commit hash'i, geri almak istediğiniz commit'in hash değeridir.
 
-#### Commit Geçmişini İnceleme
+### Commit Geçmişini İnceleme
 
 Commit geçmişini incelemek için:
 
@@ -359,11 +353,11 @@ git log --oneline
 
 Commit işlemleri, projenizdeki değişiklikleri kaydetmek ve takip etmek için temel bir Git işlevselliğidir.
 
-### Commit Silme
+## Commit Silme
 
 Git'te commit silme işlemi dikkatli yapılması gereken bir işlemdir. Commit'leri silmek, proje geçmişini değiştirebilir ve diğer işbirlikçilerle uyumsuzluklara yol açabilir. Commit'leri silmek için iki yaygın yöntem vardır: `git reset` ve `git revert`.
 
-#### Son Commit'i Silme
+### Son Commit'i Silme
 
 Son commit'i silmek için:
 
@@ -379,7 +373,7 @@ git reset --soft HEAD~1
 
 Bu komut, son commit'i siler ancak değişiklikleri korur ve sahnelenmiş olarak bırakır.
 
-#### Belirli Bir Commit'i Silme
+### Belirli Bir Commit'i Silme
 
 Belirli bir commit'i silmek için:
 
@@ -389,7 +383,7 @@ git rebase -i <commit-hash>^
 
 Bu komut, belirtilen commit'in öncesindeki commit'i interaktif rebase modunda açar. Açılan editörde, silmek istediğiniz commit'in satırını `pick` yerine `drop` olarak değiştirin ve dosyayı kaydedin.
 
-#### Commit'i Geri Alma
+### Commit'i Geri Alma
 
 Commit'i tamamen silmek yerine geri almak için:
 
