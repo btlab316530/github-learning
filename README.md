@@ -446,7 +446,6 @@ Commit silme işlemleri, proje geçmişini düzenlemek ve istenmeyen değişikli
 Bu projeye destek olmak için aşağıdaki bağlantıları kullanabilirsiniz:
 
 - [Bağış Yap](https://github.com/sponsors/btlab316530)
-- [Katkıda Bulun][]
 
 ## Destekleyenler
 
